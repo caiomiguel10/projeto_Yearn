@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div style="text-align: center">
+        <table border="1" id='tes' style="text-align: center;">
+            <tr>
+                <td>
+                    <p> primeira escrita </p>
+                    <p> primeira escrita </p>
+                    <p> primeira escrita </p>
+                    <p> primeira escrita </p>
+                    <input type='button' id='bt' value='alto contraste' onclick="alto()">
+
+
+                    <input type='button' id='bt2' value='baixo  contraste' onclick='baixo()'>
+
+                </td>
+            </tr>
+
+        </table>
+
+
+    </div>
+
+
+    <script>
+        function alto() {
+            var alto = document.getElementById("bt")
+            var div = document.getElementById("tes")
+
+            div.style.backgroundColor = 'black'
+            div.style.color = 'white'
+
+        }
+
+        function baixo() {
+
+            var baixo = document.getElementById("bt2")
+            var div = document.getElementById("tes")
+
+            div.style.backgroundColor = 'white'
+            div.style.color = 'black'
+
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
